@@ -1,0 +1,419 @@
+$accent: #EDB500
+
+header
+  height: 100vh
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  .fa-phone
+    margin-left: 33px
+    margin-right: 5px
+    color: #a7a5a5
+    font-size: 21px
+
+button
+  outline: none
+  .hamburger
+    border: none
+    outline: none
+   &:focus
+   	outline: none 
+
+.titleMenu
+  color: #EFEFEF
+  font-family: Raleway, sans-serif
+  font-weight: 700
+  font-size: 30px
+
+.menuCollapse
+  background-color: #131112
+  font-family: Raleway, sans-serif
+  font-weight: 700
+  font-size: 20px
+  color: #EFEFEF
+  position: absolute
+  top: 50px
+  left: 0px
+  text-align: left
+  a
+    display: block
+    background-color: #131112
+    font-family: Raleway, sans-serif
+    font-weight: 700
+    font-size: 20px
+    position: relative
+    color: #EFEFEF
+
+
+.pt-23
+  padding-top: 23px
+
+.pt-63
+  padding: 63px 0px
+
+logo
+  img
+    width: 201px
+    height: 56px
+
+.menu
+    a
+      font-family: Raleway, sans-serif
+      font-weight: 700
+      font-size: 20px
+      position: relative
+      color: #EFEFEF
+      transition: color 0.5s ease
+      margin-right: 20px
+      &::after
+        position: absolute
+        content: ''
+        top: 160%
+        left: 0
+        display: block
+        opacity: 0
+        height: 2px
+        width: 100%
+        background-color: $accent
+        transition: opacity 0.5s ease
+      &:hover
+        text-decoration: none
+        color: $accent
+        &::after
+          opacity: 1
+a
+  font-family: Montserrat, sans-serif
+  color: #262626
+  &:hover
+    text-decoration: none
+  .btn-zayavka
+    background-color: $accent
+    border: none
+    border: 1px solid $accent
+    font-weight: 700
+    border-radius: 3px
+    padding: 14px 7px
+    outline: none
+    transition: background-color 0.5s ease
+    &:hover
+      background-color: #fff
+
+.phone
+  font-family: Montserrat, sans-serif
+  font-size: 25px
+  font-weight: 700
+  color: #EFEFEF
+
+.title
+  text-align: center
+  .nameCompany
+    margin-top: -100px
+    font-family: Raleway, sans-serif
+    text-transform: uppercase
+    font-size: 100px
+    line-height: 117px
+    letter-spacing: 0.095em
+    color: #EFEFEF
+    -webkit-text-fill-color: #EFEFEF
+    -webkit-text-stroke-width: 7px
+    -webkit-text-stroke-color: #EFEFEF
+    -webkit-text-stroke-: #EFEFEF
+    .company55
+      font-family: Montserrat, sans-serif
+      text-transform: uppercase
+      font-size: 100px
+      line-height: 117px
+      font-weight: 700
+
+  .city
+    font-family: Montserrat, sans-serif
+    font-weight: 400
+    text-transform: uppercase
+    color: #EFEFEF
+    font-size: 36px
+    line-height: 44px
+    letter-spacing: 0.095em
+    &::before, &::after
+      content: ' - '
+
+section
+  .whiteStyle
+    margin-bottom: 42px
+    .s-info
+      font-family: Montserrat, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 150px
+      line-height: 183px
+      color: $accent
+      text-align: center
+      margin-top: 91px
+    .s-info-text
+      font-family: Raleway, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 96.4%
+      color: #131112
+      text-align: center
+
+    .s-title
+      margin-top: 50px
+      font-family: Montserrat, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 87px
+      line-height: 106px
+      color: #131112
+      a
+        .accent
+          font-family: Montserrat, sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 87px
+          line-height: 106px
+          color: $accent
+          text-decoration: underline
+    .s-quality
+      //margin-top: 91px
+      font-family: Montserrat, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 60px
+      line-height: 73px
+      color: $accent
+    .s-text
+      font-family: Montserrat, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 29px
+      color: rgba(19, 17, 18, 0.75)
+    .last
+      margin-bottom: 100px
+    .typeWork
+      border-bottom: 2px solid rgba(166, 166, 166, 0.6)
+    .first
+      margin-top: 57px
+      border-top: 2px solid rgba(166, 166, 166, 0.6)
+
+#aboutUs
+  .whiteStyle
+    .s-quality
+      margin-top: 91px
+
+section
+  .blackStyle
+    .s-title
+      margin-top: 50px
+      font-family: Montserrat, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 87px
+      line-height: 106px
+      color: #EFEFEF
+
+    .mycard
+      margin-top: 28px
+      .select
+        background: rgba(17, 17, 18, 1) 0 0 no-repeat
+        width: 429px
+        height: 377px
+        &:hover
+          background-image: url("/assets/img/selectDirection.png")
+          background-size: contain
+
+      &:hover .s-number
+        color: #131112
+      &:hover .s-text
+        color: #131112
+
+      .s-number
+        //margin-top: 40px
+        padding-left: 10px
+        padding-bottom: 0
+        margin-bottom: 0
+        font-family: Montserrat, sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 200px
+        line-height: 244px
+        color: rgba(237, 181, 0, 0.8)
+        &:hover
+          color: #131112
+
+      .s-text
+        padding-top: 0
+        margin-top: 0
+        padding-left: 10px
+        font-family: Montserrat, sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 29px
+        color: #EFEFEF
+
+.last-row
+  padding-bottom: 50px
+
+#workDirections
+  background-color: #131112
+
+#contacts
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+.map
+  font-family: Montserrat, sans-serif
+  font-weight: 400
+  color: #000
+
+label
+  margin-top: 38px
+  font-family: Montserrat, sans-serif
+  font-style: normal
+  font-weight: bold
+  font-size: 18px
+  line-height: 22px
+  color: rgba(255, 255, 255, 0.75)
+
+form
+  margin-top: 40px
+  .error
+    padding-top: 15px
+    font-family: Montserrat, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    color: $accent
+  input, textarea
+    padding: 10px
+    background: #FFFFFF
+    width: 100%
+    height: 59px
+    border: 6px solid #FFFFFF
+    box-sizing: border-box
+    border-radius: 11px
+    outline: none
+    font-family: Montserrat, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 21px
+    line-height: 26px
+    color: rgba(0, 0, 0, 0.85)
+    transition: border 0.2s ease
+    &:focus
+      border: 6px solid $accent
+  textarea
+    height: 101px
+
+
+.btn-contacts
+  margin-top: 30px
+  border: none
+  background-color: $accent
+  padding: 14px 34px
+  outline: none
+  font-family: Raleway, sans-serif
+  font-style: normal
+  font-weight: bold
+  font-size: 25px
+  line-height: 29px
+  color: #262626
+  border-radius: 15px
+  transition: background-color 0.5s ease
+  margin-bottom: 111px
+  &:hover
+    background-color: #EFEFEF
+  &:active
+    background-color: $accent
+  &:disabled
+    background-color: #858282
+    cursor: no-drop
+
+footer
+  padding-top: 32px
+  padding-bottom: 32px
+  border-top: 3px solid $accent
+  background-color: #131112
+  font-family: Montserrat, sans-serif
+  font-style: normal
+  font-weight: bold
+  font-size: 16px
+  line-height: 20px
+  color: rgba(255, 255, 255, 0.75)
+  .logosmall
+    font-family: Montserrat
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    color: #EFEFEF
+  .contactsFooter
+    font-family: Montserrat, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    color: rgba(255, 255, 255, 0.75)
+    .address
+      text-indent: 0px
+      font-family: Montserrat, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      color: rgba(255, 255, 255, 0.75)
+      &address::first-line
+        text-indent: 0px
+
+  .copyright
+    a
+      &:hover
+        text-decoration: none
+
+  .menufooter
+    a
+      display: block
+      font-family: Montserrat, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      color: rgba(255, 255, 255, 0.75)
+      transition: color 0.5s ease
+      margin-bottom: 8px
+      &:before
+        content: '|'
+        opacity: 0
+        width: 2px
+        margin-right: 7px
+        transition: opacity 0.5s ease
+
+      &:hover
+        text-decoration: none
+        color: $accent
+      &:hover:before
+        opacity: 1
+  p
+    position: relative
+    margin-bottom: 8px
+    padding: 0
+    font-family: Montserrat, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    color: rgba(255, 255, 255, 0.75)
+
+    .fa-phone, .fa-location-arrow, .fa-envelope
+      position: absolute
+      top: 5px
+      left: -21px
+      color: #a7a5a5
+      font-size: 12px
+
+.text-center
+  text-align: center
