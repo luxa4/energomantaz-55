@@ -38,17 +38,26 @@ header
   font-size: 20px
   color: #EFEFEF
   position: absolute
-  top: 50px
+  top: 80px
   left: 0px
   text-align: left
+  width: 100%
+  padding: 10px 30px
+  border: 2px solid $accent
+  z-index: 100
   a
     display: block
+    margin-top: 20px
     background-color: #131112
     font-family: Raleway, sans-serif
     font-weight: 700
     font-size: 20px
     position: relative
     color: #EFEFEF
+    &:hover
+      text-decoration: none
+      color: $accent
+
 
 
 .pt-23
@@ -99,6 +108,11 @@ a
   &:hover
     text-decoration: none
   .btn-zayavka
+    font-family: Raleway, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 21px
     background-color: $accent
     border: none
     border: 1px solid $accent
@@ -240,6 +254,7 @@ section
 
 section
   .blackStyle
+    padding-bottom: 15px
     .s-title
       margin-top: 50px
       font-family: Montserrat, sans-serif
@@ -469,3 +484,5 @@ footer
 .text-right
   text-align: right
 
+.burakovstudio-align
+  text-align: right

@@ -21,8 +21,8 @@ export class MapComponent implements OnInit {
 
   ngOnInit() {
     const mapPropBig = {
-      center: new google.maps.LatLng(59.893761, 30.359453),
-      zoom: 10,
+      center: new google.maps.LatLng(59.867862, 30.362511),
+      zoom: 11,
     }
 
     setTimeout( () => {this.mapBig = new google.maps.Map(this.mapBigElement.nativeElement, mapPropBig)}, 1)

@@ -22,7 +22,7 @@ $hamburger-types: spring
 @import 'node_modules/hamburgers/_sass/hamburgers/hamburgers'
 
 
-*
+body, http
   margin: 0
   padding: 0
   font-family: Raleway, sans-serif
@@ -30,6 +30,15 @@ $hamburger-types: spring
   line-height: 17.5px
   color: #000
   scroll-behavior: smooth
+  opacity: 1
+
+
+/* Wide screen */
+@media only screen and (max-width: 1598px)
+  //nav
+  //  .logo
+  //    display: none
+
 
 
 /* Wide screen */
@@ -40,6 +49,12 @@ $hamburger-types: spring
         font-size: 70px
       .company55
         font-size: 70px
+
+  header
+    .letterAndPhone
+      .fa-phone
+        margin-left: 0px
+        margin-right: 5px
 
   #aboutUs .whiteStyle .s-quality
     font-size: 45px
@@ -60,14 +75,44 @@ $hamburger-types: spring
         font-size: 50px
 
 
+
 /* Small devises, Tablets */
 @media only screen and (max-width: 768px)
-  .firstPart .menu
-
+  #ourWorks
+    .whiteStyle
+      .fullWorks
+        text-align: center
+  footer
+    .smallmap
+      margin-top: 40px
+    .burakovstudio-align
+      text-align: center
+      margin-top: 40px
 
 /* Phones*/
 @media only screen and (max-width: 576px)
-  .label
+  #workDirections
+    .blackStyle
+      .s-title
+        font-size: 62px
+  #main
+    .title
+      .nameCompany
+        font-size: 34px
+      .company55
+        font-size: 34px
+  footer
+    .burakovstudio-align
+      text-align: left
+  header
+    nav
+      .phone
+        font-size: 16px
+      .fa-phone, .fa-envelope
+        font-size: 12px
+
+
+
 
 /* Small phones */
 @media only screen and (max-width: 320px)
