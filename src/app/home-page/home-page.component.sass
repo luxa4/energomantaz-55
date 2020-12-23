@@ -10,14 +10,20 @@ header
     margin-right: 5px
     color: #a7a5a5
     font-size: 21px
-
-button
-  outline: none
-  .hamburger
-    border: none
+  .fa-envelope
+    margin-left: 33px
+    margin-right: 5px
+    color: #a7a5a5
+    font-size: 21px
+  button
     outline: none
-   &:focus
-   	outline: none 
+    .hamburger
+      border: none
+      outline: none
+      &:focus
+        outline: none
+    &:focus, &:active
+      outline: none
 
 .titleMenu
   color: #EFEFEF
@@ -48,8 +54,14 @@ button
 .pt-23
   padding-top: 23px
 
+.mt-35
+  margin-top: 35px
+
+.mt-43
+  margin-top: 43px
+
 .pt-63
-  padding: 63px 0px
+  padding-top: 63px
 
 logo
   img
@@ -96,11 +108,11 @@ a
     outline: none
     transition: background-color 0.5s ease
     &:hover
-      background-color: #fff
+      background-color: #FCD044
 
 .phone
   font-family: Montserrat, sans-serif
-  font-size: 25px
+  font-size: 19px
   font-weight: 700
   color: #EFEFEF
 
@@ -108,9 +120,10 @@ a
   text-align: center
   .nameCompany
     margin-top: -100px
-    font-family: Raleway, sans-serif
+    font-family: Montserrat, sans-serif
     text-transform: uppercase
     font-size: 100px
+    font-weight: 700
     line-height: 117px
     letter-spacing: 0.095em
     color: #EFEFEF
@@ -138,7 +151,25 @@ a
 
 section
   .whiteStyle
-    margin-bottom: 42px
+    button
+      margin-top: 50px
+      outline: none
+      &:active, &:focus
+        outline: none
+      .fa-file-alt
+        padding-right: 5px
+    .s-logo
+      margin-top: 40px
+      img
+        padding: 50px 50px
+        border: 1px solid rgba(19, 17, 18, 0)
+        border-radius: 30px
+        opacity: 0.7
+        transition: all 0.5s ease
+        &:hover
+          opacity: 1
+          border: 1px solid rgba(237, 181, 0, 1)
+
     .s-info
       font-family: Montserrat, sans-serif
       font-style: normal
@@ -147,7 +178,7 @@ section
       line-height: 183px
       color: $accent
       text-align: center
-      margin-top: 91px
+      //margin-top: 91px
     .s-info-text
       font-family: Raleway, sans-serif
       font-style: normal
@@ -192,15 +223,20 @@ section
     .last
       margin-bottom: 100px
     .typeWork
-      border-bottom: 2px solid rgba(166, 166, 166, 0.6)
+      //border-bottom: 2px solid rgba(166, 166, 166, 0.6)
     .first
-      margin-top: 57px
-      border-top: 2px solid rgba(166, 166, 166, 0.6)
+      //margin-top: 57px
+      //border-top: 2px solid rgba(166, 166, 166, 0.6)
 
 #aboutUs
   .whiteStyle
+    background-image: url("/assets/img/bgWhite.png")
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    margin-bottom: 42px
     .s-quality
-      margin-top: 91px
+      //margin-top: 91px
 
 section
   .blackStyle
@@ -237,13 +273,14 @@ section
         font-style: normal
         font-weight: bold
         font-size: 200px
-        line-height: 244px
+        line-height: 205px
         color: rgba(237, 181, 0, 0.8)
         &:hover
           color: #131112
 
       .s-text
         padding-top: 0
+        padding-bottom: 10px
         margin-top: 0
         padding-left: 10px
         font-family: Montserrat, sans-serif
@@ -257,7 +294,11 @@ section
   padding-bottom: 50px
 
 #workDirections
+  margin-top: 72px
   background-color: #131112
+
+#ourPartners
+  border-top: 2px solid rgba(166, 166, 166, 0.6)
 
 #contacts
   background-repeat: no-repeat
@@ -326,9 +367,10 @@ form
   transition: background-color 0.5s ease
   margin-bottom: 111px
   &:hover
-    background-color: #EFEFEF
-  &:active
+    background-color: #FCD044
+  &:active, &:focus
     background-color: $accent
+    outline: none
   &:disabled
     background-color: #858282
     cursor: no-drop
@@ -408,12 +450,22 @@ footer
     line-height: 20px
     color: rgba(255, 255, 255, 0.75)
 
-    .fa-phone, .fa-location-arrow, .fa-envelope
+    .fa-phone, .fa-location-arrow, .fa-envelope, img, .fa-info
       position: absolute
       top: 5px
       left: -21px
       color: #a7a5a5
       font-size: 12px
 
+    img
+      top: 0
+      left: -30px
+      height: 22px
+      width: 27px
+
 .text-center
   text-align: center
+
+.text-right
+  text-align: right
+
