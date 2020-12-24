@@ -116,9 +116,9 @@ body, http
   #main
     .title
       .nameCompany
-        font-size: 70px
+        font-size: 65px
       .company55
-        font-size: 70px
+        font-size: 65px
 
   #main
     .menu
@@ -168,14 +168,19 @@ body, http
         font-size: 15px
       a .btn-zayavka
         font-size: 16px
-  section
+
+/* Meduim devices, desktop */
+@media only screen and (max-width: 1024px)
+  #ourPartners
+    .whiteStyle
+      .s-logo
+        img
+          padding: 50px 37px
+  #workDirections
     .blackStyle
       .mycard
-        margin-top: 28px
-        .select
-          background: rgba(17, 17, 18, 1) 0 0 no-repeat
-          width: 10px
-          height: 377px
+        .s-text
+          line-height: 25px
 
 /* Meduim devices, desktop */
 @media only screen and (max-width: 1020px)
@@ -282,16 +287,22 @@ body, http
   #contacts
     .blackStyle
       .s-title
-        font-size: 53px
-        line-height: 53px
+        font-size: 50px
+        line-height: 51px
+      form input, textarea
+        font-size: 14px
+      form
+        .btn-contacts
+          font-size: 19px
+          margin-bottom: 50px
   #workDirections
     .blackStyle
       .s-title
-        font-size: 38px
-        line-height: 39px
+        font-size: 32px
+        line-height: 33px
       .mycard
         .select
-          height: 419px
+          height: 291px
           width: 100%
         .s-number
           font-size: 135px
@@ -316,12 +327,12 @@ body, http
         font-size: 65px
         line-height: 66px
       .s-quality
-        font-size: 31px
-        line-height: 31px
+        font-size: 28px
+        line-height: 29px
   #aboutUs
     .whiteStyle
       .s-quality
-        font-size: 28px
+        font-size: 26px
       .s-text
         font-size: 18px
         line-height: 18px
@@ -355,9 +366,74 @@ body, http
   #main
     .title
       .nameCompany
-        font-size: 25px
+        font-size: 20px
+        font-weight: 700
+        -webkit-text-fill-color: #EFEFEF
+        -webkit-text-stroke-width: 1px
+        -webkit-text-stroke-color: #EFEFEF
+        -webkit-text-stroke-: #EFEFEF
+
       .company55
-        font-size: 25px
+        font-size: 20px
+
+  #aboutUs
+    .whiteStyle
+      .s-title
+        font-size: 79px
+        line-height: 79px
+        margin-bottom: 15px
+      .s-quality
+        line-height: 45px
+
+      .last
+        margin: 0
+      .s-info
+        font-size: 81px
+        line-height: 75px
+
+  #ourPartners
+    .whiteStyle
+      .s-logo
+        margin: 5px
+
+  #workDirections
+    margin-top: 0
+    .blackStyle
+      .s-title
+        font-size: 32px
+        line-height: 33px
+      .mycard
+        .select
+          height: 269px
+          width: 100%
+      .s-text
+        font-size: 15px
+        line-height: 19px
+
+  #contacts
+    .blackStyle
+      .s-title
+        font-size: 50px
+        line-height: 51px
+      form input, textarea
+        font-size: 14px
+      form
+        margin-top: 0
+        .btn-contacts
+          font-size: 19px
+          margin-bottom: 36px
+  footer
+    .copyright
+      a
+        img
+          margin-top: 20px
+          text-align: center
+
+
+  .smallMapInFooter
+    width: 300px
+    height: 158px
+    border-radius: 8px
 
 /* Small phones */
 @media only screen and (max-width: 320px)
@@ -374,6 +450,60 @@ body, http
       .company55
         font-size: 20px
 
+  #aboutUs
+    .whiteStyle
+      .s-title
+        font-size: 79px
+        line-height: 79px
+        margin-bottom: 15px
+      .s-quality
+        line-height: 45px
 
+      .last
+        margin: 0
+
+  #ourPartners
+    .whiteStyle
+      .s-logo
+        margin: 5px
+
+  #workDirections
+    margin-top: 0
+    .blackStyle
+      .s-title
+        font-size: 32px
+        line-height: 33px
+      .mycard
+        .select
+          height: 243px
+          width: 100%
+      .s-text
+        font-size: 15px
+        line-height: 15px
+
+  #contacts
+    .blackStyle
+      .s-title
+        font-size: 50px
+        line-height: 51px
+      form input, textarea
+        font-size: 14px
+      form
+        margin-top: 0
+        .btn-contacts
+          font-size: 19px
+          margin-bottom: 36px
+  footer
+    .copyright
+      a
+        img
+          margin-top: 20px
+          text-align: center
+
+
+  .smallMapInFooter
+      width: 300px
+      height: 158px
+      border-radius: 8px
 
 
