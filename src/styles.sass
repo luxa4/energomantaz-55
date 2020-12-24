@@ -264,6 +264,11 @@ body, http
       .btn-contacts
         margin-bottom: 30px
 
+  #workDirections
+    .blackStyle
+      .s-title
+        font-size: 62px
+
   footer
     .copyright
       a
@@ -432,11 +437,13 @@ body, http
         line-height: 33px
       .mycard
         .select
-          height: 269px
+          height: 324px
           width: 100%
-      .s-text
-        font-size: 15px
-        line-height: 19px
+          .s-text
+            margin-top: 10px
+            padding-right: 46px
+            font-size: 19px
+            line-height: 25px
 
   #contacts
     .blackStyle
@@ -462,6 +469,22 @@ body, http
     width: 300px
     height: 158px
     border-radius: 8px
+
+/* Small phones */
+@media only screen and (max-width: 375px)
+  #workDirections
+    margin-top: 0
+    .blackStyle
+      .s-title
+        font-size: 32px
+        line-height: 33px
+      .mycard
+        .select
+          height: 280px
+          width: 100%
+          .s-text
+            font-size: 15px
+            line-height: 21px
 
 /* Small phones */
 @media only screen and (max-width: 320px)
@@ -505,9 +528,11 @@ body, http
         .select
           height: 243px
           width: 100%
-      .s-text
-        font-size: 15px
-        line-height: 15px
+          .s-number
+            line-height: 116px
+          .s-text
+            font-size: 15px
+            line-height: 15px
 
   #contacts
     .blackStyle
