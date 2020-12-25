@@ -13,6 +13,7 @@ export class HomePageComponent implements OnInit {
 
   menuActive:boolean = false
   form:FormGroup
+  zayavkaSent:boolean=false
 
   constructor(private router:Router, private route:ActivatedRoute) { }
 
@@ -34,8 +35,8 @@ export class HomePageComponent implements OnInit {
   }
 
   submit() {
-
     this.form.reset()
+    this.zayavkaSent=true
   }
 
   showMenu() {

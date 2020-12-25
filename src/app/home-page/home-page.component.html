@@ -226,7 +226,7 @@
       </div>
       <div class="row">
         <div class="col-10 col-sm-9 col-md-9 col-lg-8 col-xl-5 offset-1">
-          <form [formGroup]="form" (ngSubmit)="submit()">
+          <form *ngIf="!zayavkaSent" [formGroup]="form" (ngSubmit)="submit()">
             <label for="name">Имя</label>
             <input type="text" id="name" name="name"  placeholder="Введите имя" formControlName="name">
             <div *ngIf="form.get('name').invalid && form.get('name').touched" >
@@ -251,6 +251,9 @@
 
             <button class="btn-contacts" type="submit" [disabled]="form.invalid">Отправить заявку</button>
           </form>
+          <div class="congratulations" *ngIf="zayavkaSent">
+            Ваша заявка отправлена!
+          </div>
         </div>
       </div>
   </div>
