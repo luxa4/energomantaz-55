@@ -33,6 +33,22 @@ body, http
   opacity: 1
 
 
+
+/* Wide screen */
+@media only screen and (max-width: 1798px)
+  #workDirections
+    .mycard
+      margin-top: 28px
+      .select
+        background: rgba(17, 17, 18, 1) 0 0 no-repeat
+        width: 100%
+        //height: 419px
+        &:hover
+          background-color: #EDB500
+          background-image: none
+
+
+
 /* Wide screen */
 @media only screen and (max-width: 1610px)
   #main
@@ -57,14 +73,23 @@ body, http
         .footLogoSmall
           font-size: 15px
 
+  #workDirections
+    .blackStyle
+      .mycard
+        .select
+          .s-text
+            line-height: 20px
+            font-size: 22px
+
 
 
 /* Wide screen */
-@media only screen and (max-width: 1520px)
+@media only screen and (max-width: 1521px)
   footer
     .contactsFooter
       .footLogoSmall
         font-size: 14px
+
 
 /* Wide screen */
 @media only screen and (max-width: 1487px)
@@ -89,7 +114,7 @@ body, http
   #main
     .menu
       a
-        font-size: 15px
+        font-size: 14px
 
   header
     .letterAndPhone
@@ -101,6 +126,8 @@ body, http
         font-size: 13px
       a .btn-zayavka
         font-size: 15px
+
+
 
 
 
@@ -111,8 +138,46 @@ body, http
       .footLogoSmall
         font-size: 13px
 
+
+/* Meduim devices, desktop */
+@media only screen and (max-width: 1340px)
+  footer
+    .contactsFooter
+      .footLogoSmall
+        font-size: 11px
+
+/* Wide screen */
+@media only screen and (max-width: 1301px)
+  header
+    nav
+      .logo
+        img
+          width: 140px
+    .letterAndPhone
+      .phone
+        font-size: 14px
+
+/* Wide screen */
+@media only screen and (max-width: 1238px)
+  header
+    .letterAndPhone
+      .phone
+        font-size: 13px
+
 /* Wide screen */
 @media only screen and (max-width: 1200px)
+  #workDirections
+    .blackStyle
+      .mycard
+        .select
+          &:hover
+
+
+          .s-text
+            line-height: 19px
+            font-size: 22px
+            padding-right: 34px
+
   #main
     .title
       .nameCompany
@@ -123,18 +188,18 @@ body, http
   #main
     .menu
       a
-        font-size: 16px
+        font-size: 13px
 
   header
     .letterAndPhone
       .phone
-        font-size: 16px
+        font-size: 13px
       .fa-phone
-        font-size: 14px
+        font-size: 13px
       .fa-envelope
-        font-size: 14px
+        font-size: 13px
       a .btn-zayavka
-        font-size: 16px
+        font-size: 14px
 
   header
     .letterAndPhone
@@ -150,6 +215,28 @@ body, http
       .s-quality
         font-size: 50px
         line-height: 53px
+
+/* Wide screen */
+@media only screen and (max-width: 1199px)
+  #workDirections
+    .blackStyle
+      .mycard
+        margin-top: 28px
+        .select
+          background: rgba(17, 17, 18, 1) 0 0 no-repeat
+          width: 100%
+          height: 419px
+          &:hover
+            background-color: rgba(17, 17, 18, 0)
+            background-image: url("/assets/img/selectDirection.png")
+            background-size: contain
+          .s-text
+            font-size: 23px
+            line-height: 27px
+  footer
+    .contactsFooter
+      .footLogoSmall
+        font-size: 14px
 
 /* Meduim devices, desktop */
 @media only screen and (max-width: 1054px)
@@ -179,8 +266,19 @@ body, http
   #workDirections
     .blackStyle
       .mycard
-        .s-text
-          line-height: 25px
+        .select
+          height: 372px
+
+          .s-text
+            line-height: 19px
+            font-size: 19px
+            padding-right: 34px
+
+
+  #aboutUs
+    .whiteStyle .s-info
+      font-size: 95px
+      line-height: 95px
 
 /* Meduim devices, desktop */
 @media only screen and (max-width: 1020px)
@@ -209,6 +307,16 @@ body, http
         -webkit-text-stroke-: #EFEFEF
       .company55
         font-size: 60px
+
+/* Meduim devices, desktop */
+@media only screen and (max-width: 991px)
+  #main
+    nav
+      padding-bottom: 0px
+  header
+    .pt-23
+      padding-top: 0px
+
 
 /* Meduim devices, desktop */
 @media only screen and (max-width: 835px)
@@ -268,6 +376,11 @@ body, http
     .blackStyle
       .s-title
         font-size: 62px
+      .mycard
+        .select
+          height: 372px
+          .s-text
+            padding-right: 34px
 
   footer
     .copyright
@@ -292,6 +405,7 @@ body, http
     .blackStyle
       .s-title
         font-size: 62px
+        line-height: 71px
   #main
     .title
       .nameCompany
@@ -309,6 +423,21 @@ body, http
         .fa-phone, .fa-envelope
           font-size: 12px
 
+/* Phones*/
+@media only screen and (max-width: 567px)
+  #workDirections
+    .blackStyle
+      .mycard
+        .select
+          height: 291px
+          width: 100%
+          .s-number
+            font-size: 135px
+            line-height: 135px
+          .s-text
+            font-size: 16px
+            line-height: 18px
+            padding-right: 202px
 
 
   //footer
@@ -343,27 +472,31 @@ body, http
         .s-text
           font-size: 16px
           line-height: 16px
+          padding-right: 202px
 
 
 
   #ourPartners
     .whiteStyle
       .s-title
-        font-size: 48px
-        line-height: 49px
+        font-size: 32px
+        line-height: 33px
       .s-logo
         img
           max-width: 250px
   #ourWorks
     .whiteStyle
       .s-title
-        font-size: 65px
-        line-height: 66px
+        font-size: 49px
+        line-height: 49px
       .s-quality
         font-size: 28px
         line-height: 29px
   #aboutUs
     .whiteStyle
+      .s-title
+        font-size: 32px
+        line-height: 33px
       .s-quality
         font-size: 26px
       .s-text
@@ -412,8 +545,8 @@ body, http
   #aboutUs
     .whiteStyle
       .s-title
-        font-size: 79px
-        line-height: 79px
+        font-size: 46px
+        line-height: 61px
         margin-bottom: 15px
       .s-quality
         line-height: 45px
