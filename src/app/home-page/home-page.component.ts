@@ -1,6 +1,7 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {HttpClient} from '@angular/common/http';
 
 
 @Component({
@@ -15,7 +16,7 @@ export class HomePageComponent implements OnInit {
   form:FormGroup
   zayavkaSent:boolean=false
 
-  constructor(private router:Router, private route:ActivatedRoute) { }
+  constructor(private router:Router, private route:ActivatedRoute, private http: HttpClient) { }
 
   ngOnInit(): void {
     this.form = new FormGroup( {
@@ -27,6 +28,7 @@ export class HomePageComponent implements OnInit {
   }
 
 
+
   gotoFragment() {
     this.router.navigate(['/'], {
       fragment: 'contacts',
@@ -35,6 +37,14 @@ export class HomePageComponent implements OnInit {
   }
 
   submit() {
+    const sendEmail = {
+      name: this.form.get("name").value,
+      email: this.form.get('email').value,
+      phone: this.form.get('phone').value,
+      description: this.form.get('description').value
+    }
+    console.log(sendEmail)
+    this.http.post('https://eneromontazh-55.000webhostapp.com/mail.php', sendEmail).subscribe();
     this.form.reset()
     this.zayavkaSent=true
   }
